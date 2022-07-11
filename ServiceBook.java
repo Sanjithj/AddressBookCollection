@@ -33,7 +33,12 @@ public class ServiceBook {
 		System.out.println("how many contact you want to add");
 		int n=sc.nextInt();
 		for(int i=0;i<n;i++) {
-			arrayOfContacts.add(addContact());
+			 Contacts con=addContact();
+		    	if(!arrayOfContacts.add(con)) {
+				System.out.println("name already exists");
+				i--;
+				continue;
+			}
 			System.out.println();
 		}
 		}
