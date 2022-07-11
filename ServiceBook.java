@@ -96,4 +96,10 @@ public class ServiceBook {
 	    }
 	public static void addAddressBook() {
 			}
+	public static void viewState(String state) {
+			
+	}
+	public static void viewCity(String city) {
+		
+	}
 }
